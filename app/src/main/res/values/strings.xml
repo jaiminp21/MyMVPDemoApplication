@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyMVPDemoApplication</string>
+    <string name="main_activity_title">Welcome to MVP Demo Application</string>
+    <string name="main_avatar_description">Welcome to MVP Demo Application</string>
+    <string name="btn_signin">SignIn</string>
+    <string name="btn_signup">SignUp</string>
+</resources>
