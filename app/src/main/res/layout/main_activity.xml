@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.jaiminedu.mymvpdemoapplication.main.MainPresenter" />
+    </data>
+
+    <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding"
+        tools:context=".main.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/element_margin_bottom"
+            android:text="@string/main_activity_title" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/element_margin_bottom"
+            android:contentDescription="@string/main_avatar_description"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:id="@+id/button_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/element_margin_bottom"
+            android:onClick="@{presenter::handleSignInButtonClick}"
+            android:text="@string/btn_signin" />
+
+        <Button
+            android:id="@+id/button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/element_margin_bottom"
+            android:onClick="@{presenter::handleSignUpButtonClick}"
+            android:text="@string/btn_signup" />
+
+    </android.widget.LinearLayout>
+</layout>

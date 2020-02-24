@@ -1,5 +1,7 @@
-package com.jaiminedu.mymvpdemoapplication.Main;
+package com.jaiminedu.mymvpdemoapplication.main;
 
+
+import android.view.View;
 
 /**
  * Defines the contract between the View {@link MainActivity} and
@@ -10,11 +12,13 @@ public interface MainContract {
 
     interface MvpView {
         void showSingInScreen();
+
         void showSignUpScreen();
     }
 
     interface MvpPresenter {
-        void handleSignInButtonClick();
-        void handleSignUpButtonClick();
+        void handleSignInButtonClick(View view);
+
+        void handleSignUpButtonClick(View view);
     }
 }

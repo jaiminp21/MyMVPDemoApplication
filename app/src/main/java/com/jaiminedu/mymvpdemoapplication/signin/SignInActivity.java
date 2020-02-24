@@ -1,4 +1,4 @@
-package com.jaiminedu.mymvpdemoapplication.SignIn;
+package com.jaiminedu.mymvpdemoapplication.signin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,6 @@ public class SignInActivity extends AppCompatActivity implements SignInContract.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.sign_in_activity);
     }
 }
