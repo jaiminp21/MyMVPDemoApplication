@@ -9,10 +9,12 @@ package com.jaiminedu.mymvpdemoapplication.Main;
 public interface MainContract {
 
     interface MvpView {
-
+        void showSingInScreen();
+        void showSignUpScreen();
     }
 
     interface MvpPresenter {
-
+        void handleSignInButtonClick();
+        void handleSignUpButtonClick();
     }
 }
